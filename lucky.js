@@ -1,8 +1,10 @@
-$('a').each(function() {
-	var $a = $(this)
-	var $href = $a.attr('href')
-	if ($href == "http://youtube.com") {
-		var $text = String($a.text()).split(' ').join('+');
-		$(this).attr('href', "http://www.google.com/search?btnI&q=" + $text + "+site:" + $href);
-	}
+$('em').each(function() {
+	var text = String($(this).text()).split(' ').join('+');
+	var url = 'http://www.google.com/search?btnI&q=site:youtube.com+' + text;
+	$(this).html('<a href="' + url + '">' + $(this).text() + '</a>');
+});
+$('strong').each(function() {
+	var text = String($(this).text()).split(' ').join('+');
+	var url = 'http://www.google.com/search?btnI&q=' + text;
+	$(this).html('<a href="' + url + '">' + $(this).text() + '</a>');
 });
