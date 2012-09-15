@@ -1,12 +1,11 @@
- $(document).ready(function() {
- 	$('em').each(function() {
-		var text = String($(this).text()).split('-').join('').split(' ').join('+');
-		var url = 'http://www.google.com/search?btnI&q=site:youtube.com+' + text;
-		$(this).html('<a target="_blank" href="' + url + '">' + $(this).text() + '</a>');
-	});
-	$('strong').each(function() {
-		var text = String($(this).text()).split('-').join('').split(' ').join('+');
-		var url = 'http://www.google.com/search?btnI&q=' + text;
-		$(this).html('<a target="_blank" href="' + url + '">' + $(this).text() + '</a>');
-	});
+function lucky(it) {
+	var text = String(it.text()).split('-').join('').split(' ').join('+');
+	var url = 'http://www.google.com/search?btnI&q=' + text;
+	it.html('<a target="_blank" href="' + url + '">' + it.text() + '</a>');
+}
+
+$(document).ready(function() {
+ 	$('.cont > li').each(lucky($(this)));
+ 	$('.cont > em').each(lucky($(this)));
+ 	$('.cont > strong').each(lucky($(this)));
 });
