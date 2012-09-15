@@ -1,16 +1,13 @@
 function lucky(it,site) {
 	var url = 'http://www.google.com/search?btnI&q=';
-	if (site ==! undefined) {
-		url = url + "+site:" + site + "+";
-
-	}
+	site = (typeof site === "undefined") ? "" : "+site:" + site;
 	var text = String(it.text()).split('-').join('').split(' ').join('+');
 	url = url + text;
-	it.html('<a target="_blank" href="' + url + '">' + it.text() + '</a>');
+	it.html('<a target="_blank" title="Listen to ' + it.text() +' on YouTube" href="' + url + site + '">' + it.text() +  '</a>');
 }
 
 $(document).ready(function() {
- 	$('.cont > li').each(function() {
+ 	$('.cont > ul > li').each(function() {
  		lucky($(this), "youtube.com");
 	});
 	$('em').each(function() {
