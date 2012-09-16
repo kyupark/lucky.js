@@ -1,7 +1,7 @@
 function lucky(it,site) {
 	var url = 'http://www.google.com/search?btnI&q=';
 	site = (typeof site === "undefined") ? "" : "+site:" + site;
-	var text = String(it.text()).split('-').join('').split(' ').join('+');
+	var text = String(it.text()).split('-').join('').split('&').join('').split(' ').join('+');
 	url = url + text;
 	it.html('<a target="_blank" title="Listen to ' + it.text() +' on YouTube" href="' + url + site + '">' + it.text() +  '</a>');
 }

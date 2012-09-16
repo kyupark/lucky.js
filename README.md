@@ -13,9 +13,9 @@ For markdown on tumblr, when em or li used, feeling-lucky it on youtube. 'artist
 
 For example, 
 
-    _Matisyahu's Sunshine_ was playing at the Apple Store.
+    Watch *Apple iPhone 5 Keynote*
 
-    iTunes Top 3 Songs September 15
+    iTunes Top 3 Songs - September 15, 2012
     + PSY - Gangnam Style
     + We Are Never Getting Back Together
     + Maroon 5 - One More Night
@@ -23,6 +23,8 @@ For example,
 Feeling lucky on any website
 -----------------------------
 When strong used, just feeling-lucky it.
-    **John Gruber** writes **Daring Fireball**.
+    **Apple Online Store**
+    __Amazon__
+    
     
 
