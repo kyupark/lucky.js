@@ -5,7 +5,7 @@ Embed lucky.js on Tumblr
 Include this code in your tumblr customize page
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-    <script src="http://cloud.github.com/downloads/kyupark/lucky.js/lucky-0.1.3.js"></script>
+    <script src="http://cloud.github.com/downloads/kyupark/lucky.js/lucky-0.1.5.js"></script>
 
 Feeling lucky on Youtube
 -------------------------    
